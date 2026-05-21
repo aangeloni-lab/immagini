@@ -520,9 +520,7 @@ function renderHome() {
   <div class="card" style="margin-bottom:14px">
     <div class="label">Come funziona</div>
     <p style="color:var(--dim);font-size:13px;line-height:1.6">
-      ${S.mode==='solo'
-        ? `10 domande miste da tutte le 7 categorie · 10 punti per risposta corretta · Le 280 domande escono tutte a rotazione garantita`
-        : `Ogni giocatore risponde a 10 domande a turno · Le domande sono distribuite tra tutte le 7 categorie · A fine partita classifica e vincitore`}
+      10 domande, 7 categorie, un solo vincitore.<br/>Sempre Forza Lazio 🦅
     </p>
   </div>
   <button class="btn-p" onclick="startGame()" ${S.mode==='multi'&&valid.length<2?'disabled':''}>
